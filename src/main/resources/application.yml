@@ -1,0 +1,22 @@
+
+
+# Swagger\u914D\u7F6E
+swagger:
+  # \u662F\u5426\u5F00\u542Fswagger
+  enabled: true
+  # \u8BF7\u6C42\u524D\u7F00
+  pathMapping: /dev-api
+
+server:
+  port: 8081
+
+
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    virtual-host: /mall
+    username: mall
+    password: mall
+    publisher-confirms: true #\u6D88\u606F\u53D1\u9001\u5230\u4EA4\u6362\u5668\u786E\u8BA4
+    publisher-returns: true #\u6D88\u606F\u53D1\u9001\u5230\u961F\u5217\u786E\u8BA4
